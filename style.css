@@ -1,0 +1,248 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "poppins", sans-serif;
+  box-sizing: border-box;
+}
+.mainwin {
+  height: 99vh;
+  width: 99vw;
+  background: linear-gradient(#ffcccc, #ccffff);
+  position: static;
+}
+
+.container1 {
+  height: 90vh;
+  width: 94vw;
+  background-color: azure;
+  position: relative;
+  top: 30px;
+  display: flex;
+}
+
+.iconsMenu {
+  width: 10%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.appLogo {
+  margin-top: 20px;
+  padding-top: 0px;
+}
+
+.outer {
+  padding: 16px;
+  width: 70%;
+  margin: 18px 18px;
+  text-align: center;
+}
+
+.icons {
+  padding: 20px;
+}
+
+.fachange {
+  font-size: 1.5em;
+  position: relative;
+}
+
+.outer:hover {
+  cursor: pointer;
+  background-color: rgb(240, 111, 6);
+  border-radius: 25px;
+  box-shadow: 0 24px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+.fachange:hover {
+  color: white;
+}
+
+.innerbox {
+  padding: 7px;
+}
+
+.innerbox:hover {
+  border: 2px solid rgb(255, 255, 255);
+  padding: 7px;
+  border-radius: 10px;
+}
+
+.mainstuff {
+  width: 70%;
+
+  height: 100%;
+  position: relative;
+}
+
+.user {
+  display: flex;
+  align-items: center;
+  padding: 9px 3%;
+  gap: 10px;
+
+  flex-direction: row;
+  gap: 10px;
+  justify-content: space-around;
+}
+
+.top-left {
+  display: flex;
+  gap: 10px;
+}
+
+.userIco {
+  padding: 3px;
+}
+
+.searchBar {
+  width: 340px;
+  float: right;
+  padding: 10px;
+}
+
+.ip {
+  height: 40px;
+
+  border-radius: 30px;
+  border-style: none;
+  background-color: rgb(229, 238, 238);
+  padding: 10px;
+  font-weight: bold;
+}
+
+.seaico {
+  color: orange;
+  position: relative;
+  left: -40px;
+  padding: 5px;
+}
+
+.outerico {
+  background-color: rgb(255, 255, 255);
+  padding: 6px;
+  margin: 4px;
+  border: 2px solid black;
+  border-radius: 50%;
+}
+
+.cards {
+  height: 89%;
+  /* display: inline-grid;
+  grid-template-columns: auto auto;
+  width: 100%;
+  gap: 30px;
+  padding: 20px; */
+
+  padding: 20px;
+  width: 90%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  /* align-items: center; */
+  /* margin: -10px; */
+}
+
+.card1,
+.card2,
+.card3,
+.card4 {
+  height: 240px;
+  width: 370px;
+  border-radius: 26px;
+  background-color: black;
+}
+
+.card3 {
+  width: 470px;
+}
+
+.card4 {
+  width: 300px;
+}
+
+.card2 {
+  background-image: url(cloudy.jpg);
+  display: flex;
+  flex-direction: column;
+}
+
+.airqual {
+  /* border: 2px solid black; */
+  display: flex;
+  align-content: center;
+}
+.wind-outer {
+  height: 30px;
+  width: 30px;
+  padding: 20px;
+  border-radius: 50%;
+  margin: 10px;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wind-ico {
+  color: orange;
+  transform: rotateX(180deg);
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+}
+.Quality {
+  font-size: 15px;
+  color: #fff;
+  padding-bottom: 4px;
+  text-align: left;
+}
+
+.PolluLvl {
+  font-size: 12px;
+  color: white;
+  font-weight: 100;
+}
+
+.QualityInd {
+  /* border: 2px solid black; */
+}
+.Q-info {
+  display: flex;
+  padding: 20px;
+  gap: 10px;
+  align-items: center;
+}
+.Q-in {
+  /* border: 2px solid rgb(172, 57, 57); */
+  color: #fff;
+}
+
+.num {
+  font-size: 2.3em;
+  font-family: "Signika Negative", sans-serif;
+}
+.aqibox {
+  /* border: 2px solid red; */
+  background-color: rgb(99, 230, 81);
+  width: 50px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 30px;
+}
+
+.AQI {
+  text-align: center;
+  font-size: 0.8em;
+  font-weight: 600;
+  /* color: #fff; */
+}
