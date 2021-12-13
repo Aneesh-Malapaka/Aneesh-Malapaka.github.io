@@ -12,12 +12,13 @@
 }
 
 .container1 {
-  height: 90vh;
+  height: 95vh;
   width: 94vw;
   background-color: azure;
   position: relative;
   top: 30px;
   display: flex;
+  /* border: 2px solid red; */
 }
 
 .iconsMenu {
@@ -72,8 +73,8 @@
 }
 
 .mainstuff {
-  width: 70%;
-
+  width: 65%;
+  border: 2px solid red;
   height: 100%;
   position: relative;
 }
@@ -81,32 +82,39 @@
 .user {
   display: flex;
   align-items: center;
-  padding: 9px 3%;
+  padding: 0px 3%;
   gap: 10px;
-
+  border: 2px solid red;
   flex-direction: row;
   gap: 10px;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .top-left {
   display: flex;
+  /* flex-direction: column; */
   gap: 10px;
+  align-items: flex-start;
 }
 
 .userIco {
-  padding: 3px;
+  /* padding: 13px; */
+  position: relative;
+  top: 10px;
+  height: 50px;
 }
 
 .searchBar {
-  width: 340px;
+  width: 440px;
   float: right;
   padding: 10px;
+  /* border: 2px solid red; */
+  position: relative;
+  left: -110px;
 }
 
 .ip {
   height: 40px;
-
   border-radius: 30px;
   border-style: none;
   background-color: rgb(229, 238, 238);
@@ -124,8 +132,8 @@
 .outerico {
   background-color: rgb(255, 255, 255);
   padding: 6px;
-  margin: 4px;
-  border: 2px solid black;
+  margin: 10px;
+  border: 2px solid rgb(196, 185, 185);
   border-radius: 50%;
 }
 
@@ -142,15 +150,14 @@
   display: flex;
   flex-flow: row wrap;
   justify-content: space-evenly;
-  /* align-items: center; */
-  /* margin: -10px; */
+  gap: 30px;
 }
 
 .card1,
 .card2,
 .card3,
 .card4 {
-  height: 240px;
+  height: 270px;
   width: 370px;
   border-radius: 26px;
   background-color: black;
@@ -160,14 +167,143 @@
   width: 470px;
 }
 
-.card4 {
-  width: 300px;
+.card1 {
+  background-image: url(sunny.jpg);
+  display: flex;
+  flex-direction: column;
+  height: 260px;
+  /* width: 390px; */
 }
 
+.upper {
+  /* border: 1px solid red; */
+  height: 30%;
+  border-radius: 26px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.cloud-outer {
+  height: 30px;
+  width: 30px;
+  padding: 20px;
+  border-radius: 50%;
+  margin: 10px;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cloud-ico {
+  color: orange;
+}
+
+.middle {
+  /* border: 1px solid red; */
+  height: 35%;
+  border-radius: 26px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: left;
+  padding-left: 20px;
+  /* gap: 4px; */
+}
+
+.temperature {
+  display: flex;
+  gap: 10px;
+}
+
+.max-temp {
+  font-size: 2.2em;
+  font-weight: bold;
+}
+
+.min-temp {
+  background-color: #fff;
+  height: 50%;
+  width: 12%;
+  border-radius: 17px;
+  font-size: 0.9em;
+}
+
+.min {
+  text-align: center;
+  margin-top: 5px;
+  font-weight: 700;
+}
+
+.temp-info {
+  /* border: 2px solid red; */
+}
+.infowea {
+  font-size: 0.8em;
+  font-weight: bold;
+}
+.lower {
+  /* border: 1px solid red; */
+  height: 35%;
+  border-radius: 26px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 10px;
+}
+
+.pressure,
+.visibility,
+.humidity {
+  background-color: #25242a;
+  width: 95px;
+  height: 60px;
+  border-radius: 18px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.pressure {
+  background-color: #1b143a;
+}
+
+.visibility {
+  background-color: rgb(154, 228, 106);
+}
+
+.humidity {
+  background-color: #fff;
+}
+
+.Coname,
+.ConameP {
+  font-size: 0.8em;
+  padding-bottom: 4px;
+  padding-top: 4px;
+  font-weight: 500;
+}
+
+.Pvalue,
+.Vvalue,
+.Hvalue {
+  font-size: 1.2em;
+  font-weight: 500;
+  font-family: "Signika Negative", sans-serif;
+}
+
+.ConameP,
+.Pvalue {
+  color: #fff;
+  font-weight: 400;
+}
 .card2 {
   background-image: url(cloudy.jpg);
   display: flex;
   flex-direction: column;
+  height: 260px;
 }
 
 .airqual {
@@ -228,6 +364,7 @@
 .num {
   font-size: 2.3em;
   font-family: "Signika Negative", sans-serif;
+  /* margin-bottom: 0; */
 }
 .aqibox {
   /* border: 2px solid red; */
@@ -244,5 +381,158 @@
   text-align: center;
   font-size: 0.8em;
   font-weight: 600;
-  /* color: #fff; */
+}
+
+.progress {
+  position: relative;
+  left: 16%;
+  bottom: 8%;
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 20px;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  width: 70%;
+}
+
+.text {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: 10px;
+  gap: 20px;
+  padding-bottom: 4px;
+}
+.start,
+.end {
+  font-size: 1.5em;
+}
+.mid-text {
+  z-index: 1;
+  position: relative;
+  top: -5px;
+  left: -35px;
+  color: #fff;
+}
+
+.fa-comment-alt {
+  transform: scale(3.5, 1.2);
+  z-index: 2;
+  padding-top: 15px;
+  margin-top: 70px;
+  background-color: none;
+  text-shadow: 0 24px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+.w3-light-grey,
+.w3-orange {
+  height: 9px;
+  border-radius: 25px;
+}
+
+.card4 {
+  width: 300px;
+  background-image: url(rainy.jpg);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.tomo,
+.tomo-temp {
+  padding: 20px;
+}
+
+.tomoT,
+.wea-tom {
+  font-weight: 500;
+}
+
+.loc,
+.tempT {
+  font-size: 1.7em;
+  font-weight: bold;
+}
+
+.sideCard {
+  border: 1px solid rgb(20, 18, 18);
+  height: 100%;
+  width: 25%;
+  display: flex;
+  /* gap: 20px; */
+  flex-direction: column;
+  background-color: rgba(241, 237, 237, 0.541);
+}
+
+.head {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border: 2px solid red;
+  /* gap: 20px; */
+  height: 15%;
+}
+
+.sideTemp-loc {
+  /* border: 2px solid blue; */
+  width: 60%;
+  height: 50%;
+  padding-left: 25px;
+}
+
+.sun {
+  font-size: 1.2em;
+  font-weight: 600;
+}
+
+#Sloc {
+  background-color: inherit;
+  border-style: none;
+  opacity: 70%;
+}
+
+.sideTemp {
+  padding-right: 30px;
+}
+.tempSide {
+  font-size: 2.2em;
+  font-weight: 600;
+  color: orange;
+}
+.divider {
+  opacity: 10%;
+  color: #000;
+  border: 0.01em solid black;
+  margin: 15px;
+}
+
+.suninfo {
+  padding: 10px;
+  /* padding-left: 18px; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.UVInfo {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  background-color: #1b143a;
+  border-radius: 35px;
+}
+
+.sunico {
+  color: orange;
+}
+
+.UV {
+  display: flex;
+  flex-direction: column;
 }
