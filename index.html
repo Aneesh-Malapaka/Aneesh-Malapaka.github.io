@@ -21,11 +21,16 @@
     <div class="mainwin">
       <div class="container1">
         <div class="iconsMenu">
-          <img src="#" alt="applogo" class="appLogo" />
+          <i class="fas fa-cloud-sun-rain fa-3x appLogo"></i>
           <nav class="icons">
             <div class="outer">
               <div class="innerbox">
                 <i class="fas fa-chart-bar fachange whiteiconcolor"></i>
+              </div>
+            </div>
+            <div class="outer">
+              <div class="innerbox">
+                <i class="fas fa-chart-line fachange whiteiconcolor"></i>
               </div>
             </div>
             <div class="outer">
@@ -44,6 +49,10 @@
               </div>
             </div>
           </nav>
+
+          <div class="exit">
+            <i class="fas fa-door-open fa-2x exitIco"></i>
+          </div>
         </div>
 
         <div class="mainstuff" style="margin-bottom: 0">
@@ -149,11 +158,39 @@
                   <p class="end">Hazardous</p>
                 </div>
                 <div class="w3-light-grey greybar">
-                  <div class="w3-orange oranbar" style="width: 75%"></div>
+                  <div class="w3-orange oranbar" style="width: 50%"></div>
                 </div>
               </div>
             </div>
-            <div class="card3"></div>
+
+            <!-- readability for card3 -->
+            <div class="card3">
+              <div class="upper3">
+                <p class="howstxt">
+                  How's the <br />
+                  temperature today?
+                </p>
+                <div class="icons3">
+                  <div class="icon-cover">
+                    <i class="fas fa-thermometer-three-quarters icon3"></i>
+                  </div>
+                  <div class="icon-cover">
+                    <i class="fas fa-umbrella icon3"></i>
+                  </div>
+                  <div class="icon-cover">
+                    <i
+                      class="fas fa-wind icon3 wind3"
+                      style="transform: rotateX(180deg)"
+                    ></i>
+                  </div>
+                </div>
+              </div>
+              <div class="lower3">
+                <img src="forecast.jpg" alt="forecast graph" />
+              </div>
+            </div>
+
+            <!-- card4 -->
             <div class="card4">
               <div class="tomo">
                 <p class="tomoT">Tomorrow</p>
@@ -200,26 +237,43 @@
           </div>
           <div class="weatherPred">
             <p class="Pred">Weather Prediction</p>
+
+            <!--  -->
             <div class="Scard1">
-              <div class="iconCloud"></div>
-              <div class="day-wea">
-                <div class="day"></div>
-                <div class="wea"></div>
+              <div class="iconCloud">
+                <img class="wea-icon" src="clouds.png" alt="cloud-img" />
               </div>
-              <div class="temp-day"><p class="tempofday"></p></div>
+              <div class="day-wea">
+                <p class="day">Novermber 10</p>
+                <p class="wea">Cloudy</p>
+              </div>
+              <div class="temp-day">
+                <p class="tempofday">26&deg;&nbsp;/19&deg;&nbsp;</p>
+              </div>
             </div>
 
             <div class="Scard2">
-              <div class="iconSun"></div>
-              <div class="day-wea">
-                <div class="day"></div>
-                <div class="wea"></div>
+              <div class="iconSun">
+                <img class="wea-icon" src="sun.png" alt="" />
               </div>
-              <div class="temp-day"><p class="tempofday"></p></div>
+              <div class="day-wea">
+                <p class="day">Novermber 11</p>
+                <p class="wea">Bright</p>
+              </div>
+              <div class="temp-day">
+                <p class="tempofday">26&deg;&nbsp;/&nbsp;20&deg;</p>
+              </div>
             </div>
           </div>
 
-          <div class="next5"></div>
+          <div class="next5card">
+            <div class="next5">
+              <div class="ico">
+                <i class="far fa-calendar cal-ico" style="color: #fff"></i>
+              </div>
+              <p class="txtnext">Next 5 days</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
