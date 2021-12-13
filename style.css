@@ -5,7 +5,7 @@
   box-sizing: border-box;
 }
 .mainwin {
-  height: 99vh;
+  height: 100vh;
   width: 99vw;
   background: linear-gradient(#ffcccc, #ccffff);
   position: static;
@@ -18,7 +18,6 @@
   position: relative;
   top: 30px;
   display: flex;
-  /* border: 2px solid red; */
 }
 
 .iconsMenu {
@@ -27,12 +26,14 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 30px;
+  gap: 10px;
 }
 
 .appLogo {
   margin-top: 20px;
   padding-top: 0px;
+  color: orange;
+  background-color: #fff;
 }
 
 .outer {
@@ -48,7 +49,6 @@
 
 .fachange {
   font-size: 1.5em;
-  position: relative;
 }
 
 .outer:hover {
@@ -72,9 +72,13 @@
   border-radius: 10px;
 }
 
+.exit {
+  position: relative;
+  top: 50px;
+}
 .mainstuff {
   width: 65%;
-  border: 2px solid red;
+
   height: 100%;
   position: relative;
 }
@@ -84,7 +88,6 @@
   align-items: center;
   padding: 0px 3%;
   gap: 10px;
-  border: 2px solid red;
   flex-direction: row;
   gap: 10px;
   justify-content: space-between;
@@ -92,13 +95,12 @@
 
 .top-left {
   display: flex;
-  /* flex-direction: column; */
+
   gap: 10px;
   align-items: flex-start;
 }
 
 .userIco {
-  /* padding: 13px; */
   position: relative;
   top: 10px;
   height: 50px;
@@ -108,9 +110,9 @@
   width: 440px;
   float: right;
   padding: 10px;
-  /* border: 2px solid red; */
+
   position: relative;
-  left: -110px;
+  left: 0px;
 }
 
 .ip {
@@ -139,12 +141,6 @@
 
 .cards {
   height: 89%;
-  /* display: inline-grid;
-  grid-template-columns: auto auto;
-  width: 100%;
-  gap: 30px;
-  padding: 20px; */
-
   padding: 20px;
   width: 90%;
   display: flex;
@@ -161,10 +157,6 @@
   width: 370px;
   border-radius: 26px;
   background-color: black;
-}
-
-.card3 {
-  width: 470px;
 }
 
 .card1 {
@@ -201,7 +193,6 @@
 }
 
 .middle {
-  /* border: 1px solid red; */
   height: 35%;
   border-radius: 26px;
   display: flex;
@@ -209,7 +200,6 @@
   justify-content: space-evenly;
   align-items: left;
   padding-left: 20px;
-  /* gap: 4px; */
 }
 
 .temperature {
@@ -236,15 +226,11 @@
   font-weight: 700;
 }
 
-.temp-info {
-  /* border: 2px solid red; */
-}
 .infowea {
   font-size: 0.8em;
   font-weight: bold;
 }
 .lower {
-  /* border: 1px solid red; */
   height: 35%;
   border-radius: 26px;
   display: flex;
@@ -347,9 +333,6 @@
   font-weight: 100;
 }
 
-.QualityInd {
-  /* border: 2px solid black; */
-}
 .Q-info {
   display: flex;
   padding: 20px;
@@ -357,17 +340,14 @@
   align-items: center;
 }
 .Q-in {
-  /* border: 2px solid rgb(172, 57, 57); */
   color: #fff;
 }
 
 .num {
   font-size: 2.3em;
   font-family: "Signika Negative", sans-serif;
-  /* margin-bottom: 0; */
 }
 .aqibox {
-  /* border: 2px solid red; */
   background-color: rgb(99, 230, 81);
   width: 50px;
   height: 30px;
@@ -432,6 +412,65 @@
   border-radius: 25px;
 }
 
+/* card3 starts here */
+.card3 {
+  height: 270px;
+  width: 470px;
+  padding: 10px;
+  background-color: #fff;
+
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.upper3 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.icons3 {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+
+  gap: 10px;
+  width: 30%;
+}
+
+.icon-cover {
+  font-size: 20px;
+  width: 40%;
+  text-align: center;
+  border-radius: 12px;
+}
+
+.icon-cover:hover {
+  background-color: #ff8f00;
+  color: white;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19);
+}
+
+.howstxt {
+  font-size: 1.2em;
+  font-weight: bold;
+  opacity: 80%;
+}
+
+.lower3 {
+  height: 300px;
+  width: 446px;
+  border-radius: 26px;
+  transform: scale(1.05);
+}
+
+.lower3 img {
+  height: 180px;
+  width: 400px;
+  border-radius: 20px;
+  padding: 4px;
+}
+/* card4 starts here */
 .card4 {
   width: 300px;
   background-image: url(rainy.jpg);
@@ -457,7 +496,6 @@
 }
 
 .sideCard {
-  border: 1px solid rgb(20, 18, 18);
   height: 100%;
   width: 25%;
   display: flex;
@@ -471,8 +509,6 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  border: 2px solid red;
-  /* gap: 20px; */
   height: 15%;
 }
 
@@ -515,17 +551,18 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 20px;
+  gap: 10px;
 }
 
 .UVInfo {
   display: flex;
-  gap: 20px;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
-  padding: 15px;
+  padding: 12px;
   background-color: #1b143a;
-  border-radius: 35px;
+  border-radius: 20px;
+  color: #fff;
+  width: 290px;
 }
 
 .sunico {
@@ -535,4 +572,112 @@
 .UV {
   display: flex;
   flex-direction: column;
+  gap: 10px;
+}
+
+.value {
+  display: flex;
+  gap: 20px;
+  font-size: 1.1em;
+}
+
+.intensity {
+  background-color: greenyellow;
+  color: #000;
+  border-radius: 20px;
+  width: 80px;
+  font-weight: bold;
+  font-size: 0.7em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.infotext {
+  font-size: 0.7em;
+}
+
+.weatherPred {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.Pred {
+  font-size: 1.6em;
+  padding: 10px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  /* border: 2px solid red; */
+}
+
+.Scard1,
+.Scard2 {
+  /* border: 2px solid red; */
+  height: 70px;
+  width: 80%;
+  border-radius: 20px;
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+}
+
+.iconSun,
+.iconCloud {
+  /* border: 2px solid red; */
+  width: 20%;
+}
+.wea-icon {
+  height: 40px;
+}
+
+.day-wea {
+  margin-left: -30px;
+}
+
+.day {
+  opacity: 40%;
+  font-size: 80%;
+  font-weight: 700;
+}
+
+.wea {
+  font-weight: bold;
+}
+
+.tempofday {
+  color: orange;
+  opacity: 80%;
+  font-weight: bold;
+}
+
+.next5card {
+  height: 50px;
+  display: flex;
+  justify-content: right;
+  position: relative;
+  top: 20px;
+  left: -20px;
+}
+
+.next5 {
+  width: 40%;
+  height: 90%;
+  display: flex;
+  gap: 20px;
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+  background-color: #ff8f00;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19);
+}
+
+.txtnext {
+  color: #fff;
+  font-size: 90%;
+  font-weight: bold;
 }
