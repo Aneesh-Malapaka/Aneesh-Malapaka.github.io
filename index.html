@@ -12,16 +12,12 @@
       href="https://fonts.googleapis.com/css2?family=Signika+Negative&display=swap"
       rel="stylesheet"
     />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
-      crossorigin="anonymous"
-    />
+
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
 
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body>
+  <body style="margin-bottom: 0">
     <div class="mainwin">
       <div class="container1">
         <div class="iconsMenu">
@@ -50,15 +46,15 @@
           </nav>
         </div>
 
-        <div class="mainstuff">
-          <!-- <div class="navbox">
-            <nav class="user">
+        <div class="mainstuff" style="margin-bottom: 0">
+          <div class="navbox">
+            <nav class="user" style="margin-bottom: 0">
               <div class="top-left">
-                <img src="" alt="user" class="userIco" />
+                <img src="user.png" alt="user" class="userIco" />
 
                 <div class="welcome">
                   <h1>Hello,</h1>
-                  User_name
+                  Aneesh Malapaka.
                 </div>
               </div>
               <div class="top-right">
@@ -80,34 +76,150 @@
                 </div>
               </div>
             </nav>
-          </div> -->
+          </div>
           <div class="cards">
-            <div class="card1"></div>
+            <div class="card1">
+              <div class="upper">
+                <div class="cloud-outer">
+                  <i class="fas fa-cloud fa-lg cloud-ico"></i>
+                </div>
+
+                <div class="textIn">
+                  <p class="Wea">Weather</p>
+                  <p class="What" id="innertext">What's the weather</p>
+                </div>
+              </div>
+              <div class="middle">
+                <div class="temperature">
+                  <div class="max-temp">
+                    <p class="max">22<sup>&deg;</sup>C</p>
+                  </div>
+                  <div class="min-temp">
+                    <p class="min">11<sup>&deg;</sup>C</p>
+                  </div>
+                </div>
+                <div class="temp-info">
+                  <p class="infowea">Partly Cloudy</p>
+                </div>
+              </div>
+              <div class="lower">
+                <div class="pressure">
+                  <div class="ConameP"><p class="nameC">Pressure</p></div>
+                  <div class="Pvalue">800mb</div>
+                </div>
+                <div class="visibility">
+                  <div class="Coname"><p class="nameC">Visibility</p></div>
+                  <div class="Vvalue">4.3 km</div>
+                </div>
+                <div class="humidity">
+                  <div class="Coname"><p class="nameC">Humidity</p></div>
+                  <div class="Hvalue">87%</div>
+                </div>
+              </div>
+            </div>
+            <!--  -->
             <div class="card2">
               <div class="airqual">
                 <div class="wind-outer">
                   <i class="fas fa-wind fa-lg wind-ico"></i>
                 </div>
-                <div class="text">
+                <div class="textP">
                   <p class="Quality">Air Quality</p>
                   <p class="PolluLvl" id="MainPollu">Main pollution: PM 2.5</p>
                 </div>
               </div>
               <div class="QualityInd">
                 <div class="Q-info">
-                  <div class="Q-in">
+                  <div class="Q-in" style="margin-bottom: 0">
                     <p class="num">390</p>
                     <p class="direction">West Wind</p>
                   </div>
                   <div class="aqibox">
-                    <p class="AQI">AQI</p>
+                    <p class="AQI" style="margin-bottom: 0">AQI</p>
                   </div>
+                </div>
+              </div>
+              <div class="progress">
+                <div class="text">
+                  <p class="start">Good</p>
+                  <div class="mid">
+                    <i class="fas fa-comment-alt fa-2x labelIco"></i>
+                    <span class="mid-text">Standard</span>
+                  </div>
+                  <p class="end">Hazardous</p>
+                </div>
+                <div class="w3-light-grey greybar">
+                  <div class="w3-orange oranbar" style="width: 75%"></div>
                 </div>
               </div>
             </div>
             <div class="card3"></div>
-            <div class="card4"></div>
+            <div class="card4">
+              <div class="tomo">
+                <p class="tomoT">Tomorrow</p>
+                <p class="loc">Alam Barzah</p>
+              </div>
+              <div class="tomo-temp">
+                <p class="tempT">20&deg;C</p>
+                <p class="wea-tom">Rainy</p>
+              </div>
+            </div>
           </div>
+        </div>
+        <!-- space  for readibility -->
+        <div class="sideCard">
+          <div class="head">
+            <div class="sideTemp-loc">
+              <p class="sun">Sun</p>
+              <select name="SunLoc" id="Sloc">
+                <option value="Banten,Indonesia">Banten,Indonesia</option>
+                <option value="Banten,Indonesia">Banten,Indonesia</option>
+                <option value="Banten,Indonesia">Banten,Indonesia</option>
+              </select>
+            </div>
+            <div class="sideTemp">
+              <p class="tempSide">22&deg;C</p>
+            </div>
+          </div>
+          <hr class="divider" />
+
+          <div class="suninfo">
+            <div class="sunpos-img">
+              <img src="sunrise.jfif" alt="Graph" />
+            </div>
+            <div class="UVInfo">
+              <div class="sunico"><i class="fas fa-sun fa-3x"></i></div>
+              <div class="UV">
+                <div class="value">
+                  <div class="val">20 UVI</div>
+                  <div class="intensity"><p class="mod">Moderate</p></div>
+                </div>
+                <div class="infotext">Moderate risk from UV rays</div>
+              </div>
+            </div>
+          </div>
+          <div class="weatherPred">
+            <p class="Pred">Weather Prediction</p>
+            <div class="Scard1">
+              <div class="iconCloud"></div>
+              <div class="day-wea">
+                <div class="day"></div>
+                <div class="wea"></div>
+              </div>
+              <div class="temp-day"><p class="tempofday"></p></div>
+            </div>
+
+            <div class="Scard2">
+              <div class="iconSun"></div>
+              <div class="day-wea">
+                <div class="day"></div>
+                <div class="wea"></div>
+              </div>
+              <div class="temp-day"><p class="tempofday"></p></div>
+            </div>
+          </div>
+
+          <div class="next5"></div>
         </div>
       </div>
     </div>
