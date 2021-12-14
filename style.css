@@ -215,7 +215,7 @@
 .min-temp {
   background-color: #fff;
   height: 50%;
-  width: 12%;
+  width: 13%;
   border-radius: 17px;
   font-size: 0.9em;
 }
@@ -227,7 +227,7 @@
 }
 
 .infowea {
-  font-size: 0.8em;
+  font-size: 1em;
   font-weight: bold;
 }
 .lower {
@@ -489,6 +489,9 @@
   font-weight: 500;
 }
 
+.wea-tom {
+  font-size: 1.1em;
+}
 .loc,
 .tempT {
   font-size: 1.7em;
@@ -499,9 +502,12 @@
   height: 100%;
   width: 25%;
   display: flex;
-  /* gap: 20px; */
+
   flex-direction: column;
+  /* background-color: rgba(241, 237, 237, 0.541); */
   background-color: rgba(241, 237, 237, 0.541);
+  /* background: transparent; */
+  /* opacity: 50%; */
 }
 
 .head {
@@ -639,7 +645,12 @@
   margin-left: -30px;
 }
 
-.day {
+.day1 {
+  opacity: 40%;
+  font-size: 80%;
+  font-weight: 700;
+}
+.day2 {
   opacity: 40%;
   font-size: 80%;
   font-weight: 700;
@@ -649,7 +660,13 @@
   font-weight: bold;
 }
 
-.tempofday {
+.tempofday1 {
+  color: orange;
+  opacity: 80%;
+  font-weight: bold;
+}
+
+.tempofday2 {
   color: orange;
   opacity: 80%;
   font-weight: bold;
