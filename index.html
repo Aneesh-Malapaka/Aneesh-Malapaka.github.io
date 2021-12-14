@@ -17,7 +17,7 @@
 
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body style="margin-bottom: 0">
+  <body onload="onLoad()">
     <div class="mainwin">
       <div class="container1">
         <div class="iconsMenu">
@@ -70,7 +70,7 @@
                 <div class="searchBar">
                   <input
                     type="text"
-                    placeholder="Search Anything"
+                    placeholder="Enter a city name"
                     id="seabar"
                     class="ip"
                     size="30"
@@ -78,6 +78,7 @@
                   <i
                     class="fas fa-search fa-md seaico"
                     style="background-color: rgb(229, 238, 238)"
+                    onclick="submitName()"
                   ></i>
                   <span class="outerico">
                     <i class="far fa-bell fa-md"></i>
@@ -244,11 +245,13 @@
                 <img class="wea-icon" src="clouds.png" alt="cloud-img" />
               </div>
               <div class="day-wea">
-                <p class="day">Novermber 10</p>
+                <p class="day1">Novermber 10</p>
                 <p class="wea">Cloudy</p>
               </div>
               <div class="temp-day">
-                <p class="tempofday">26&deg;&nbsp;/19&deg;&nbsp;</p>
+                <p class="tempofday1" id="temp-day1">
+                  26&deg;&nbsp;/19&deg;&nbsp;
+                </p>
               </div>
             </div>
 
@@ -257,11 +260,11 @@
                 <img class="wea-icon" src="sun.png" alt="" />
               </div>
               <div class="day-wea">
-                <p class="day">Novermber 11</p>
+                <p class="day2">Novermber 11</p>
                 <p class="wea">Bright</p>
               </div>
               <div class="temp-day">
-                <p class="tempofday">26&deg;&nbsp;/&nbsp;20&deg;</p>
+                <p class="tempofday2">26&deg;&nbsp;/&nbsp;20&deg;</p>
               </div>
             </div>
           </div>
@@ -282,6 +285,8 @@
       src="https://kit.fontawesome.com/7928db1473.js"
       crossorigin="anonymous"
     ></script>
+
+    <script src="index.js"></script>
   </body>
   <!-- <a href="https://www.freepik.com/vectors/background" style="color: white"
     >Background vector created by starline - www.freepik.com</a
